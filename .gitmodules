@@ -1,0 +1,21 @@
+[submodule "apps"]
+	path = apps
+	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/apps
+[submodule "packages/core/database_service"]
+	path = packages/core/database_service
+	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/core/database_service
+[submodule "packages/core/di_service"]
+	path = packages/core/di_service
+	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/core/di_service
+[submodule "packages/core/logger_service"]
+	path = packages/core/logger_service
+	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/core/logger_service
+[submodule "packages/core/route_service"]
+	path = packages/core/route_service
+	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/core/route_service
+[submodule "packages/utilities/encrypt_utils"]
+	path = packages/utilities/encrypt_utils
+	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/utilities/encrypt_utils
+[submodule "packages/utilities/shared"]
+	path = packages/utilities/shared
+	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/utilities/shared

@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "Lumen Staging",
+            "request": "launch",
+            "type": "dart",
+            "program": "apps/lib/main.dart",
+            "args": ["--dart-define-from-file=${workspaceFolder}/configs/env/env.production.json"],
+            "flutterMode": "debug",
+        },
+        {
+            "name": "Lumen Production",
+            "request": "launch",
+            "type": "dart",
+            "program": "apps/lib/main.dart",
+            "args": ["--dart-define-from-file=${workspaceFolder}/configs/env/env.production.json"],
+            "flutterMode": "debug",
+        }
+    ]
+}

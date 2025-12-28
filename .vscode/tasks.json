@@ -1,0 +1,89 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Get Packages",
+            "type": "shell",
+            "command": "melos run get:packages"
+            // "command": "melos run gen:packages --no-select"
+        },
+        {
+            "label": "Build Build Runner",
+            "type": "shell",
+            "command": "melos run gen:packages"
+            // "command": "melos run gen:packages --no-select"
+        },
+        {
+            "label": "Build Translations",
+            "type": "shell",
+            "command": "melos run gen:translations --no-select"
+        },
+        {
+            "label": "Analyze",
+            "type": "shell",
+            "command": "melos run analyze"
+        },
+        {
+            "label": "Setup Package Name Staging",
+            "type": "shell",
+            "command": "melos run rename:staging && sh scripts/firebase-staging.sh"
+        },
+        {
+            "label": "Setup Package Name Production",
+            "type": "shell",
+            "command": "melos run rename:production && sh scripts/firebase-production.sh"
+        },
+        {
+            "label": "Setup Icon Launcher Production",
+            "type": "shell",
+            "command": "melos run launcher:production"
+        },
+        {
+            "label": "Setup Icon Launcher Staging",
+            "type": "shell",
+            "command": "melos run launcher:staging"
+        },
+        {
+            "label": "Build APK Staging debug",
+            "type": "shell",
+            "command": "flutter build apk --release --dart-define-from-file=${workspaceFolder}/configs/env/env.staging.json --target=lib/main.dart",
+            "options": {
+                "cwd": "${workspaceFolder}/apps"
+            }
+        },
+        // {
+        //     "label": "Setup Locale",
+        //     "type": "shell",
+        //     "command": "dart run bin/generate.dart -S assets/translations -f keys -O lib/src/utils -o locale_keys.g.dart"
+        // },
+        // {
+        //     "label": "Setup Package Google Services Staging",
+        //     "type": "shell",
+        //     // Windows Based Need Change for Linux or Mac
+        //     "command": "copy",
+        //     "args": [
+        //         "${workspaceFolder}\\config\\google_services\\staging.json",
+        //         "${workspaceFolder}\\android\\app\\google-services.json"
+        //     ]
+        // },
+        //     "command": "copy",
+        //     "args": [
+        //         "${workspaceFolder}\\config\\google_services\\production.json",
+        //         "${workspaceFolder}\\android\\app\\google-services.json"
+        //     ]
+        // },
+        {
+            "label": "Clean Build Runner",
+            "type": "shell",
+            "command": "dart run build_runner clean"
+        },
+        {
+            "label": "Run Onboarding Integration Test",
+            "type": "shell",
+            "command": "flutter drive --debug --driver=integration_test/driver.dart --target=integration_test/onboarding/onboarding_screen_test.dart --device-id=00008120-000E34D22EA3601E",
+            "options": {
+                "cwd": "${workspaceFolder}/apps"
+            }
+        }
+    ]
+}
