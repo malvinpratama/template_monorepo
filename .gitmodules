@@ -1,21 +1,32 @@
 [submodule "apps"]
 	path = apps
-	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/apps
+	url = https://github.com/malvinpratama/apps.git
+	branch = develop
 [submodule "packages/core/database_service"]
 	path = packages/core/database_service
-	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/core/database_service
+	url = https://github.com/malvinpratama/database_service.git
+	branch = develop
 [submodule "packages/core/di_service"]
 	path = packages/core/di_service
-	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/core/di_service
+	url = https://github.com/malvinpratama/di_service.git
+	branch = develop
 [submodule "packages/core/logger_service"]
 	path = packages/core/logger_service
-	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/core/logger_service
+	url = https://github.com/malvinpratama/logger_service.git
+	branch = develop
 [submodule "packages/core/route_service"]
 	path = packages/core/route_service
-	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/core/route_service
+	url = https://github.com/malvinpratama/route_service.git
+	branch = develop
 [submodule "packages/utilities/encrypt_utils"]
 	path = packages/utilities/encrypt_utils
-	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/utilities/encrypt_utils
+	url = https://github.com/malvinpratama/encrypt_utils.git
+	branch = develop
 [submodule "packages/utilities/shared"]
 	path = packages/utilities/shared
-	url = /Users/malvin/Dev/Repo/monorepo/template_monorepo/packages/utilities/shared
+	url = https://github.com/malvinpratama/shared.git
+	branch = develop
+[submodule "packages/core/theme_service"]
+	path = packages/core/theme_service
+	url = https://github.com/malvinpratama/theme_service.git
+	branch = develop

@@ -11,6 +11,7 @@ workspace:
   - packages/core/di_service
   - packages/core/logger_service
   - packages/core/route_service
+  - packages/core/theme_service
   - packages/utilities/encrypt_utils
   - packages/utilities/shared
 
